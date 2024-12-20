@@ -1,15 +1,15 @@
 :root{
-    --primary-color:rgb(65, 65, 236);
-    --secound-color:rgb(26, 26, 25);
-    --primary-background:#ffff;
-    --primary-font-family: 'Poppins';
+--primary-background:rgb(1 ,22 ,87);
+--primary-color:#ffff;
+--secound-color:rgb(26, 26, 25);
+--gray:rgb(208, 202, 202);
+--black:rgb(26, 26, 25);
+--primary-font-family: 'Poppins';
 }
-
 a{
 text-decoration: none;
 color: var(--secound-color);
 }
-
 ul{
 list-style-type: none;
 margin: 0;
@@ -21,43 +21,177 @@ margin:0;
 font-family: var(--primary-font-family);
 outline: none;
 }
+//mobile navigation
 .navBar{
-    background-color: var(--primary-background);
-    padding:2em;
-    .titlePage{
-        text-decoration: none;
-        color: var(--secound-color);
-        font-weight: 700;
-        font-size: 1.2em;
-        .blueText{
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-    }
+background-color: #ffff;
+padding:1em;
+.titlePage{
+text-decoration: none;
+color: var(--gray);
+font-weight: 700;
+font-size: 1.2em;
+.blueText{
+color: var(--primary-background);
+font-weight: bold;
+}
+}
 .mobileMenuEnter{
-        position: absolute;
-        top: 1.8em;
-        left: 20em;
-        width: 2em;
-    }
-    }
-.nav{
-    display: none;
+position: absolute;
+top: 1em;
+left: 25em;
+width: 2em;
+}
+.navigation{
+display: none;
 }
 .container{
-    display: flex;
-    place-content: space-between;
+display: flex;
+place-content: space-between;
 }
 .mobileMenuEnter{
+cursor: pointer;
+}
+}
+//main head Part
+.headerPart{
+background-color: #e0dada;
+text-align: center;
+.mainTextPart{
+color: var(--primary-background);
+font-weight: bold;
+margin: 0;
+padding-top: 2em;
+padding-bottom: 2em;
+text-transform: uppercase;
+}
+.headOne{
+font-size:1.5em;
+margin-top:-0.5em;
+margin-bottom: 2em;
+}
+.pimaryLink{
+display: inline-block;
+background-color:var(--primary-background);
+font-size: 1.4em;
+font-weight: bold;
+margin: 0.5em;
+padding:0.5em  1.3em;
+border-radius: 5em;
+color: #ffff;
+box-shadow: 0.1em 0.3em 0.3em #5e5d5d;
+}
+.watchVidio{
+display: block;
+margin-top: 1em;
+font-weight: bold;
+font-size: 1.1em;
+text-decoration: underline;
+.cameraIcon{
+width:5%;
+margin-right: 0.5em;
+}
+}
+.taskPicture{
+width:70%;
+margin-top: 3em;
+margin-bottom: 3em;
+border-radius:0.2em;
+box-shadow: 0.1em 0.3em 0.5em #5e5d5d;
+}
+}
+//list part 
+.featuresPart{
+background-color: var(--black);
+color: #ffff;
+ul.features{
+padding:1em 2em 2em 1em;
+    .listItem{
+        font-size: 1.1em;
+        margin-bottom:1em;
+        margin-left:6em;
+        position: relative;
+            &:before{
+            content: '';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/icons/right-arrow_6635045.png');
+            background-size: contain;
+            margin-right: 0.5em;
+}
+}
+}
+.pictureTwo{
+display: none;
+}
+}
+//card part
+.cardPart{
+ background-color: var(--primary-background);
+ color: #ffff;
+.MenuItem{
+background-color: rgba(37, 193, 224, 0.5);
+text-align: center;
+margin: 5em auto 5em auto;
+padding: 2em 1em;
+width: 80%;
+border-radius: 1em;
+.profileImage{
+width: 5em;
+border-radius: 100%;
+border:5px solid #006BD6;
+margin-top: -4.5em;
+}
+}
+}
+ //contant part
+.contactPart{
+background-color: var(--gray);
+    .titleContact{
+        display: inline;
+        color: var(--black);
+        font-size: 1.5em;
+        font-weight: bolder;
+    }   
+    .leftPart{
+        display: flex;
+        flex-direction: column;
+        margin-left:2em;
+label{
+    display: block;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+input , textarea{
+width: 80%;
+padding: 0.8em;
+margin-bottom: 1em;
+border-radius: 0.3em;
+border:1px solid var(--gray);
+outline: none;
+box-sizing: border-box;
+}  
+input[type="submit"]{
+    display: inline-block;
+    background-color:var(--primary-background);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size:1.3em ;
+    border: none;
+    padding: 0.8em 2em;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    width: unset;
     cursor: pointer;
 }
-.
-    
-    
-    
-    
-    
-    
+.mapPicture{
+margin-top: -12em;
+margin-left: 10em;
+width: 45%;
+}}
+}
     
     
     

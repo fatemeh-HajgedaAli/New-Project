@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-  --primary-color:rgb(65, 65, 236);
+  --primary-background:rgb(1 ,22 ,87);
+  --primary-color:#ffff;
   --secound-color:rgb(26, 26, 25);
-  --primary-background:#ffff;
+  --gray:rgb(208, 202, 202);
+  --black:rgb(26, 26, 25);
   --primary-font-family: "Poppins";
 }
 
@@ -11,44 +13,189 @@ a {
   color: var(--secound-color);
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--primary-background);
   margin: 0;
   font-family: var(--primary-font-family);
+  outline: none;
 }
 
 .navBar {
-  background-color: var(--primary-background);
-  padding: 2em;
+  background-color: white;
+  padding: 1em;
 }
 .navBar .titlePage {
   text-decoration: none;
-  color: var(--secound-color);
+  color: var(--gray);
   font-weight: 700;
   font-size: 1.2em;
 }
 .navBar .titlePage .blueText {
-  color: var(--primary-color);
+  color: var(--primary-background);
   font-weight: bold;
 }
 .navBar .mobileMenuEnter {
   position: absolute;
-  top: 1.8em;
-  left: 20em;
+  top: 1em;
+  left: 25em;
   width: 2em;
 }
-
-.nav {
+.navBar .navigation {
   display: none;
 }
-
-.container {
+.navBar .container {
   display: flex;
   place-content: space-between;
 }
-
-.mobileMenuEnter {
+.navBar .mobileMenuEnter {
   cursor: pointer;
+}
+
+.headerPart {
+  background-color: #e0dada;
+  text-align: center;
+}
+.headerPart .mainTextPart {
+  color: var(--primary-background);
+  font-weight: bold;
+  margin: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-transform: uppercase;
+}
+.headerPart .headOne {
+  font-size: 1.5em;
+  margin-top: -0.5em;
+  margin-bottom: 2em;
+}
+.headerPart .pimaryLink {
+  display: inline-block;
+  background-color: var(--primary-background);
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0.5em;
+  padding: 0.5em 1.3em;
+  border-radius: 5em;
+  color: white;
+  box-shadow: 0.1em 0.3em 0.3em #5e5d5d;
+}
+.headerPart .watchVidio {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+.headerPart .watchVidio .cameraIcon {
+  width: 5%;
+  margin-right: 0.5em;
+}
+.headerPart .taskPicture {
+  width: 70%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-radius: 0.2em;
+  box-shadow: 0.1em 0.3em 0.5em #5e5d5d;
+}
+
+.featuresPart {
+  background-color: var(--black);
+  color: white;
+}
+.featuresPart ul.features {
+  padding: 1em 2em 2em 1em;
+}
+.featuresPart ul.features .listItem {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 6em;
+  position: relative;
+}
+.featuresPart ul.features .listItem:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icons/right-arrow_6635045.png");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+.featuresPart .pictureTwo {
+  display: none;
+}
+
+.cardPart {
+  background-color: var(--primary-background);
+  color: white;
+}
+.cardPart .MenuItem {
+  background-color: rgba(37, 193, 224, 0.5);
+  text-align: center;
+  margin: 5em auto 5em auto;
+  padding: 2em 1em;
+  width: 80%;
+  border-radius: 1em;
+}
+.cardPart .MenuItem .profileImage {
+  width: 5em;
+  border-radius: 100%;
+  border: 5px solid #006BD6;
+  margin-top: -4.5em;
+}
+
+.contactPart {
+  background-color: var(--gray);
+}
+.contactPart .titleContact {
+  display: inline;
+  color: var(--black);
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+.contactPart .leftPart {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+}
+.contactPart .leftPart label {
+  display: block;
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.contactPart .leftPart input, .contactPart .leftPart textarea {
+  width: 80%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid var(--gray);
+  outline: none;
+  box-sizing: border-box;
+}
+.contactPart .leftPart input[type=submit] {
+  display: inline-block;
+  background-color: var(--primary-background);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  padding: 0.8em 2em;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  width: unset;
+  cursor: pointer;
+}
+.contactPart .leftPart .mapPicture {
+  margin-top: -12em;
+  margin-left: 10em;
+  width: 45%;
 }
 
 /*fonts*//*# sourceMappingURL=main.css.map */
