@@ -41,6 +41,7 @@ body {
   font-weight: bold;
 }
 .navBar .mobileMenuEnter {
+  display: block;
   position: absolute;
   top: 1em;
   left: 25em;
@@ -48,6 +49,34 @@ body {
 }
 .navBar .navigation {
   display: none;
+  position: fixed;
+  background-color: var(--primary-color);
+  right: -0.2em;
+  top: 0em;
+  text-align: right;
+  margin-right: 0.2em;
+  padding-right: 1em;
+  width: 10em;
+  height: 100vh;
+  z-index: 999;
+  box-shadow: 1px 3px 5px var(--gray);
+}
+.navBar .navigation .mobileMenuExit {
+  width: 3em;
+  margin-left: 8em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+.navBar .navigation .listMenuOne {
+  margin-top: 1em;
+  font-weight: 700;
+}
+.navBar .navigation .listMenuTwo {
+  margin-top: 1em;
+}
+.navBar .navigation .listMenuTwo .linkList {
+  font-weight: 700;
+  color: var(--primary-background);
 }
 .navBar .container {
   display: flex;
@@ -198,4 +227,10 @@ body {
   width: 45%;
 }
 
-/*fonts*//*# sourceMappingURL=main.css.map */
+/*fonts*/
+/*responsive*/
+@media only screen and (min-width: 768px) {
+  .mobileMenuEnter, .mobileMenuExit {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

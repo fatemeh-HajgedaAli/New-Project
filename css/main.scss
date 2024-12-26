@@ -36,13 +36,43 @@ font-weight: bold;
 }
 }
 .mobileMenuEnter{
+display: block;
 position: absolute;
 top: 1em;
 left: 25em;
 width: 2em;
 }
+// navigation responsive
 .navigation{
 display: none;
+position:fixed;
+background-color:var(--primary-color);
+right:-0.2em;
+top: 0em;
+text-align: right;
+margin-right: 0.2em;
+padding-right:1em;
+width: 10em;
+height: 100vh;
+z-index:999;
+box-shadow: 1px 3px 5px var(--gray);
+
+.mobileMenuExit{
+width: 3em;
+margin-left: 8em;
+margin-top: 1em;
+cursor: pointer;
+}
+.listMenuOne{
+margin-top: 1em;
+font-weight: 700;
+}
+.listMenuTwo{
+    margin-top: 1em;
+.linkList{
+font-weight: 700;
+color: var(--primary-background);}
+}
 }
 .container{
 display: flex;
@@ -52,6 +82,8 @@ place-content: space-between;
 cursor: pointer;
 }
 }
+
+
 //main head Part
 .headerPart{
 background-color: #e0dada;
@@ -193,10 +225,16 @@ width: 45%;
 }}
 }
     
+ 
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*responsive*/
+
+@media only screen and (min-width:768px){
+
+.mobileMenuEnter , .mobileMenuExit{
+display: none;
+}
     
-    
-    
-    
-    
-    /*fonts*/
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
